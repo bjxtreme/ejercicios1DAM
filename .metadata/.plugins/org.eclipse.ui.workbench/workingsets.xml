@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1481127859107_2" label="primera_evaluacion" name="primera_evaluacion">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Hola mundo javaFX" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Ejercicio3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/34_Impares_sin_repetir" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1481127910386_3" label="segunda_evaluacion" name="segunda_evaluacion">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/41_Ajedrez" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/35_Mostrar_descendente" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/40_Comprobar_cuadrado_magico" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/37_Mayor_fila" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/36_Entre_1_y_10" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/38_Array_2D_Repetidos" type="4"/>
+<item elementID="=Clase_String" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1480697005168_0" label="Window Working Set" name="Aggregate for window 1480697005167"/>
+</workingSetManager>

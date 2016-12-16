@@ -1,0 +1,27 @@
+package comprobar.cuadrado;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+
+		final int FILAS = 3;
+		final int COLS = 3;
+		int[][] nums = new int[FILAS][COLS];
+		for (int i = 0; i < nums.length; i++)
+		{
+			for (int j = 0; j < nums[0].length; j++)
+			{
+				System.out.print("Elemento [" + i + "][" + j +"]:");
+				nums[i][j] = sc.nextInt();
+			}
+		}
+		sc.close();
+
+	}
+
+}

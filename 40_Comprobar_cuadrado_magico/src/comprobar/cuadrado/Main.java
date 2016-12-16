@@ -1,0 +1,121 @@
+package comprobar.cuadrado;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+
+		final int FILAS = 3;
+		final int COLS = 3;
+		int[][] nums = new int[FILAS][COLS];
+		// Leemos desde cosola el cuadrado
+		for (int i = 0; i < nums.length; i++)
+		{
+			for (int j = 0; j < nums[0].length; j++)
+			{
+				System.out.print("Elemento [" + i + "][" + j +"]:");
+				nums[i][j] = sc.nextInt();
+			}
+		}
+		sc.close();
+		boolean magico = true;
+		// Comprobar que no haya repetidos
+
+		for (int i = 0; i < nums.length && magico; i++)
+		{
+			for (int j = 0; j < nums[0].length && magico; j++)
+			{
+				for (int f = i; f < nums.length && magico; f++)
+				{
+					for (int c = 0; c < nums[0].length && magico; c++)
+					{
+						if(nums[i][j] == nums[f][c] && (i != f || j != c))
+						{
+							magico = false;
+						}
+					}
+				}
+			}
+		}
+
+		if(magico)
+		{
+			// Sumar la primera fila
+			int suma = 0;
+			for (int c = 0; c < nums[0].length; c++)
+			{
+				suma += nums[0][c];
+			}
+
+			// Comprobar suma de filas
+			int sumaFila = 0;
+			for (int i = 1; i < nums.length && magico; i++)
+			{
+				sumaFila = 0;
+				for (int j = 0; j < nums[0].length && magico; j++)
+				{
+					sumaFila += nums[i][j];
+				}
+				if(sumaFila != suma)
+				{
+					magico = false;
+				}
+
+			}
+			if(magico)
+			{
+				// Comprobar suma de columnas
+				int sumaColumna = 0;
+				for (int c = 0; c < nums[0].length && magico; c++)
+				{
+					sumaColumna = 0;
+					for (int f = 0; f < nums.length && magico; f++)
+					{
+						sumaColumna += nums[f][c];
+					}
+					if(sumaColumna != suma)
+					{
+						magico = false;
+					}
+				}
+				if(magico)
+				{
+					int sumaDiagonal = 0;
+					for (int i = 0; i < nums.length; i++)
+					{
+						sumaDiagonal += nums[i][i];
+					}
+					if(sumaDiagonal == suma)
+					{
+						sumaDiagonal = 0;
+						for (int i = 0; i < nums.length; i++)
+						{
+							sumaDiagonal += nums[nums.length - 1 - i][i];
+						}
+						if(sumaDiagonal != suma)
+						{
+							magico = false;
+						}
+					}
+					else
+					{
+						magico = false;
+					}
+				}
+			}
+		}
+
+		if(magico)
+		{
+			System.out.println("Es mágico.");
+		}
+		else
+		{
+			System.out.println("No es mágico.");
+		}
+	}
+}

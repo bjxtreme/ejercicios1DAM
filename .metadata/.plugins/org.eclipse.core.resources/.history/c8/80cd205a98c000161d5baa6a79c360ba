@@ -1,0 +1,24 @@
+//Realiza un programa que cargue y muestre un array de enteros de 4 x 4
+//desde consola.
+//Finalmente el programa dirá si existe algún número repetido o no
+//(sin especificar cuál o cuáles).
+
+package array2d.repetidos;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+
+		final int FILAS = 4;
+		final int COLS = 4;
+		int[][] nums = new int[FILAS][COLS];
+
+
+	}
+
+}

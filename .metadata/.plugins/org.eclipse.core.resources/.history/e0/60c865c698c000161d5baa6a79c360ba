@@ -1,0 +1,69 @@
+//Realiza un programa que cargue y muestre un array de enteros de 4 x 4
+//desde consola.
+//Finalmente el programa dirá si existe algún número repetido o no
+//(sin especificar cuál o cuáles).
+
+package array2d.repetidos;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+
+		final int FILAS = 4;
+		final int COLS = 4;
+		int[][] nums = new int[FILAS][COLS];
+		for (int i = 0; i < nums.length; i++)
+		{
+			for (int j = 0; j < nums[0].length; j++)
+			{
+				System.out.print("Elemento [" + i + "][" + j +"]:");
+				nums[i][j] = sc.nextInt();
+			}
+		}
+		sc.close();
+		// Mostrar array:
+		for (int i = 0; i < nums.length; i++)
+		{
+			for (int j = 0; j < nums[0].length; j++)
+			{
+				System.out.print(nums[i][j] + "\t");
+			}
+			System.out.print("\n\n");
+		}
+		boolean repetido = false;
+		for (int i = 0; i < nums.length && !repetido; i++)
+		{
+			for (int j = 0; j < nums[0].length && !repetido; j++)
+			{
+				for (int f = i; f < nums.length && !repetido; f++)
+				{
+					for (int c = 0; c < nums[0].length && !repetido; c++)
+					{
+						if(nums[i][j] == nums[f][c] && (i != f || j != c))
+						{
+							repetido = true;
+						}
+					}
+				}
+			}
+		}
+
+
+		if(repetido)
+		{
+			System.out.println("Hay al menos un repetido.");
+		}
+		else
+		{
+			System.out.println("No hay repetidos.");
+		}
+
+
+	}
+
+}

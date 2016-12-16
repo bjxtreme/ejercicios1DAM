@@ -1,0 +1,32 @@
+package clase.string;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+
+		String[] cadenas = new String[10];
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < cadenas.length; i++)
+		{
+			System.out.println("Cadena: ");
+			cadenas[i] = sc.nextLine();
+		}
+		sc.close();
+
+
+		String cadena = "hola";
+		System.out.println("La cadena "  + cadena +
+				" tiene " + cadena.length() + " caracteres.");
+
+
+
+
+
+
+	}
+
+}

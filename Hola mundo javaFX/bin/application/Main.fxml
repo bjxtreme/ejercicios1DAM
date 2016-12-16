@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="210.0" prefWidth="268.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+   <children>
+      <Button layoutX="28.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="217.0" text="Ok" />
+      <Label layoutX="54.0" layoutY="29.0" prefHeight="79.0" prefWidth="152.0" text="Hola Mundo">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

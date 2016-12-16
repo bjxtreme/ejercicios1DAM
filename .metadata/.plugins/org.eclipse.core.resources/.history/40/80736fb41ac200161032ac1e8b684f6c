@@ -1,0 +1,16 @@
+package clase.string;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		String[] cadenas = new String[10];
+		for (int i = 0; i < cadenas.length; i++)
+		{
+			System.out.println(cadenas[i]);
+		}
+
+	}
+
+}
