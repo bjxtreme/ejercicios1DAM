@@ -1,5 +1,6 @@
 /*
- * Realiza un programa que lea una frase y nos la muestre al revés.
+ * Realiza un programa que lea 10 palabras, para posteriormente
+ *  mostrarlas en orden alfabético ascendente.
  */
 package alreves;
 

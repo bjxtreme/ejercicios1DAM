@@ -1,0 +1,26 @@
+/*
+ * Realiza un programa que lea 10 palabras, para posteriormente mostrarlas
+ *  en orden alfabético ascendente.
+ */
+package ordenar.palabras;
+
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		final int NUM = 10;
+		String[] palabras = new String[NUM];
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < palabras.length; i++)
+		{
+			System.out.print("Palabra: ");
+			palabras[i] = sc.nextLine();
+		}
+
+
+	}
+
+}

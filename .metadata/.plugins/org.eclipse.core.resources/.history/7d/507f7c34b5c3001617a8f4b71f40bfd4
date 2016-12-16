@@ -1,0 +1,16 @@
+/*
+ * Realiza un programa que lea 10 palabras, para posteriormente mostrarlas
+ *  en orden alfabético ascendente.
+ */
+package ordenar.palabras;
+
+public class Main
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

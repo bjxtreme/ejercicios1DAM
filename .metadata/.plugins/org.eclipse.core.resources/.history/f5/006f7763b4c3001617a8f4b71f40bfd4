@@ -1,6 +1,3 @@
-/*
- * Realiza un programa que lea una frase y nos la muestre al revés.
- */
 package alreves;
 
 import java.util.Scanner;
@@ -16,7 +13,7 @@ public class Main
 		sc.close();
 		for (int i = frase.length() - 1; i >= 0 ; i--)
 		{
-			System.out.print(frase.charAt(i));
+			System.out.print(frase.charAt(i));fdgf
 		}
 		System.out.println();
 		System.out.println("Al revés por palabras: ");
