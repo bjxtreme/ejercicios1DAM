@@ -14,7 +14,8 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/37_Mayor_fila" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/36_Entre_1_y_10" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/38_Array_2D_Repetidos" type="4"/>
-<item elementID="=Clase_String" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase_String" type="4"/>
+<item elementID="=42_Frase_al_reves" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1480697005168_0" label="Window Working Set" name="Aggregate for window 1480697005167"/>
 </workingSetManager>
